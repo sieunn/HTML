@@ -5,10 +5,21 @@
         <title>블로그 설문조사</title>
         <style>
             body{
-                background-color: #e6e3e3;
+                background-color: #f0f0f0;
                 margin: 0 auto;
                 text-align: center;
             }
+
+            .컨테이너{
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: white;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 0 0 10px #ccc;
+            }
+
             button{
                 background-color: #4CAF50;
                 color: white;
@@ -16,31 +27,33 @@
                 padding: 5px 15px;
                 border-radius: 5px;
             }
+
             input{
                 width: 80%;
             }
-            .컨테이너{
-                background-color: white;
-                border-radius: 10px;
-                width: 80%;
-                margin: 0 auto;
-                padding: 10px;
-            }
+            
         </style>
     </head>
     <body>
         <div class="컨테이너">
             <h1>블로그 설문조사</h1>
-            <p>이름:</p>
-            <input type="text" name="user_name">
-            <p>이메일:</p>
-            <input type="email" name="email">
-            <p>나이:</p>
-            <input type="number" name="age">
-            <p>의견:</p>
-            <input type="text" name="think">
-            <br><br>
             <form>
+            <label>이름: <br>
+                <input type="text" name="user_name">
+            </label>
+                <br><br>
+            <label>이메일: <br>
+                <input type="email" name="email">
+            </label>
+                <br><br>
+            <label>나이: <br>
+                <input type="number" name="age">
+            </label>
+                <br><br>
+            <label>의견: <br>
+                <input type="text" name="think">
+            </label>
+                <br><br>
                 <button type="submit">제출</button>
             </form>
         </div>
