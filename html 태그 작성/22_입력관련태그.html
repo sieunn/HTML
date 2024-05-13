@@ -55,8 +55,26 @@
                     name 안에 변수명을 작성할 때는 속성이나 예약어는 피해서 작성할 것
                     name = id 로 작성하면 id 속성과 혼동이 올 수 있음 
                     name = user_id 나 member_id로 작성해서 id만 단독으로 작성하는 것 방지
-        </pre>
+            placeholder = 사용자가 입력을 해야하는 내용이나 정보를 미리보기처럼 양식을 작성해주는 공간
+        
+            </pre>
 
+            <h3>radio checkbox</h3>
+            <pre>
+                - 여러 연관된 값을 묶에서 선택하는 경우 사용
+                - radio : 여러 값 중 하나만 선택
+                ex) 성별
+                - checkbox : 여러 값 중 원하는 모든 것 선택
+                ex) 상세검색, 관심분야, 취미
+            
+                <strong style="color: red;">
+                연관된 radio, checkbox는 같은 name 속성값을 가져야함
+                </strong>
+                
+                radio, checkbox 추가 속성
+                - value : 선택 되었을 때 제출될 값을 작성하는 속성
+                - checked : 체크가 되어있게 하는 속성
+            </pre>
         <h3>label 태그</h3>
         <pre>
             label 태그는 input 태그의 앞 뒤에 위치하면 input에 관련된 설명을 제공하는 데 사용
@@ -64,6 +82,7 @@
             input과 label 태그를 연결해줄 때  id와 for 속성을 사용해서 연결해줌
         </pre>
 
+        <hr>
 
         <from>
             아이디 : <input type="text" name="user_id"><br>
@@ -73,5 +92,56 @@
             <input type="range" min="10" max="100" step="1" value="30" name="ran"><br>
         </from>
 
+        <h4>날짜 / 시간 관련 input 태그</h4>
+        <ul>
+            <li><input type="date"></li>
+            <li><input type="month"></li>.
+            <li><input type="week"></li>
+            <ii><input type="time"></ii>
+            <ii><input type="datetime-local"></ii>
+        </ul>
+
+        <h4>radio 확인</h4>
+        <input type="radio" name="동물">강아지
+        <br>
+        <input type="radio" name="동물">고양이
+        <br>
+        <input type="radio" name="동물">사자
+
+        <hr>
+        <h4>checkbox 확인</h4>
+        <p>내가 좋아하는 색상 고르기</p>
+        <input type="checkbox" name="색상"> 빨강
+        <br>
+        <input type="checkbox" name="색상"> 노랑
+        <br>
+        <input type="checkbox" name="색상"> 초록
+        <br>
+
+        <h4>radio checkbox에 value와 checked 를 넣어보기</h4>
+        <input type="radio" name="팀" value="A팀 선택했음"checked>A팀
+        <input type="radio" name="팀" value="B팀 선택했음">B팀
+        <hr>
+
+        <input type="checkbox" name="취미" value="수영" checked>수영
+        <br>
+        <input type="checkbox" name="취미" value="독서"checked>독서
+        <br>
+        <input type="checkbox" name="취미" value="잠자기" checked>잠자기
+
+        <h3>button 태그</h3>
+        <pre>
+            - 버튼을 만드는 태그
+            - type 속성값에 따라 동작이 달라짐
+                type="submit"
+                    type에서 submit을 작성하게 되면 form을 제출하는 버튼을 만들때 제출하겠다는 의미
+                    button 에서 type을 지정해주지 않으면 기본으로 submit 지정
+
+                type="reset"
+                    작성된 모든 값을 초기화
+                
+                type="button" 
+                    버튼 동작을 개발자가 만들고자 할 때 사용
+        </pre>
     </body>
 </html>

@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>동영상게시판</title>
-        <style>
-            body{
-                text-align: center;
-                background-color: rgb(230, 248, 224);
-            }
-            img{
-                width: 1100px;
-                height: 600px;
-            }
-            .icon{
-                width: 60px;
-                height: 60px;
-            }
-            video{
-                width: 80%;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>🎞️동영상 게시판🎞️</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>동영상게시판</title>
+    <style>
+      body {
+        margin: 0 auto;
+        background-color: rgb(205, 226, 163);
+      }
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+      h1 {
+        text-align: center;
+      }
+      video {
+        margin: 0 auto;
+        display: block;
+        width: 50%;
+        border-radius: 5px;
+      }
+      a {
+        text-align: center;
+        margin: 0 auto;
+      }
+      .컨테이너 {
+        margin: 0 auto;
+        width: 80%;
+        background-color: white;
+      }
 
-        <span><img src="../이미지들/옐로우짱구.jpg"/>
-        </span>
+      .댓글들{
+        padding: 5px;;
+      }
+      .댓글 {
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: rgb(235, 248, 212);
+        padding: 5px;
 
-        <video autoplay muted loop>
-            <source src="오로라.mp4"type="video/mp4">
-        </video>
-        <!--상대경로 절대경로로 동영상 하나씩 올리기-->
+      }
+      .버튼꾸미기{
+        display: block;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="컨테이너">
+      <h1>🎞️동영상 게시판🎞️</h1>
+      <video autoplay muted loop>
+        <source src="오로라.mp4" type="video/mp4" />
+      </video>
 
-        <br><br>
+      <div class="댓글들">
+        <p>댓글확인</p>
+        <div class="댓글">
+          <p>사용자1:</p>
+          <p>예쁜 동영상이네요~~!</p>
+        </div>
+        <br>
+        <div class="댓글">
+          <input type="text" placeholder="아이디를 입력하세요." /><br />
+          <input type="text" placeholder="댓글을 작성해주세요." />
+        </div>
+      </div>
+      <!--상대경로 절대경로로 동영상 하나씩 올리기-->
+
+      <br/>
+      <div class="버튼꾸미기">
         <a href="홈페이지게시판.html">
-            <img class="icon" src="게시판아이콘.png"/>
+          <img class="icon" src="게시판아이콘.png" />
         </a>
         <a href="홈페이지메인.html">
-            <img class="icon" src="홈페이지아이콘.png"/>
+          <img class="icon" src="홈페이지아이콘.png" />
         </a>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
