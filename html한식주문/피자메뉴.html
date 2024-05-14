@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>피자 메뉴</title>
+        <style>
+            body{
+                background-color: #f9f9f9;
+            }
+            .컨테이너{
+                width: 70%;
+                margin: 20px auto;
+            }
+            h1{
+                text-align: center;
+            }
+            .메뉴{
+                background-color: white;
+                display: inline-flex;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                margin: 20px ; /*공간설정*/
+                box-shadow: 0 0 10px #55535380;
+            }
+        
+            img{
+                width: 300px;
+                height: 300px;
+                border-radius: 100px;
+            }
+             .헤더,.푸터{
+                background-color: rgba(0, 0, 0, 0.658);
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+            .네비게이션{
+                background-color: aliceblue;
+                padding: 10px;
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                display: inline;
+            }
+            a{
+                text-align: center;
+                text-decoration: none; /*밑줄제거*/
+                color:rgb(72, 72, 248);/*글자 색 변경*/
+                font-weight:bold; /*글자 두께 변경*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="헤더">
+            <h1>KH 배달 서비스 - 피자메뉴</h1>
+        </div>
+        <div class="네비게이션">
+            <ul>
+                <li><a href="홈페이지.html">홈</a></li>
+                <li><a href="주문하기.html">주문하기</a></li>
+                <li><a href="한식메뉴.html">한식메뉴소개</a></li>
+            </ul>
+        </div>
+        <div class="컨테이너">
+            <div class="메뉴">
+                <div class="아이템">
+                    <img src="음식이미지/고르곤졸라.jpg">
+                    <h2>고르곤졸라 피자</h2>
+                    <p>치즈의 맛이 풍부하게 어우러진 클래식한 피자</p>
+                </div>
+                <div class="아이템">
+                    <img src="음식이미지/페퍼로니.jpg">
+                    <h2>페퍼로니 피자</h2>
+                    <p>스파이시한 페퍼로니와 풍부한 치즈의 맛으로 사랑받는 피자</p>
+                </div>
+                <div class="아이템">
+                    <img src="음식이미지/콤비네이션.jpg">
+                    <h2>페퍼로니 피자</h2>
+                    <p>여러가지 야채와 치즈로 만든 가장 인기있는 피자</p>
+                </div>
+            </div>
+        </div>
+        <div class="푸터">
+            &copy; 2024 배달 서비스. All right reserved.
+        </div>
+    </body>
+</html>
