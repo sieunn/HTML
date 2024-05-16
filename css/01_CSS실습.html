@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS 실습</title>
+        <style>
+            /* css 주석 */
+            /* style 태그 css를 작성하기 위한 태그*/
+            /* 태그 선택자 */
+            h1{
+                /*글자색 변경*/
+                color: red;
+            }
+            strong{
+                /*폰트 크기*/
+                /*숫자나 기본으로 설정된 값으로 변경하는데 기본 px 많이 사용*/
+                font-size: 18px; 
+
+                /*폰트 변경 - 기본으로 컴퓨터 안에 있는 폰트로 변경
+                font face의 경우 한 폰트만 지정해주기 때문에 사용x 
+                font face 사용 -> 외부에 있는 폰트 가져올 때
+
+                jsdelivr.com or google폰트 사용
+                @font-face{
+                    font-family:'이름설정';
+                    src: url(주소입력) format(포멧입력);
+                    font-weight: 폰트굵기 설정;
+                    font-style: 스타일 설정;
+                }
+
+                font-family의 경우 여러 폰트를 작성해준 다음 
+                            만약 맨 앞에 작성한 폰트가 존재하지 않는다면
+                            두번째 작성되 폰트 적용
+                font-family : A,B,C 만약에 A폰트가 존재하지 않을 경우, B폰트 적용
+                             영문 폰트 정의 '',"" 붙이지 않음          -> <p>hello</p> font-family:A,B,c
+                             영문 이외 폰트 정의는 '',"" 사용해서 작성  -> <p>안녕</p> font-family:'A','B','C'
+                             <p> hello 라고 하지만 나는 안녕이란다</p> -> font-famil:A,'a',B,'b',C,'c'
+                             <p> hello 라고 하지만 나는 안녕이란다</p> -> font-famil:A,B,C,'a','b','c'
+                             
+                */
+                font-family: '궁서체';
+            }
+            p{
+                font-size: 20px;
+                font-family: '바탕';
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS 적용하기</h1>
+        <strong>폰트 변경하기</strong>
+        <p>컴퓨터 안에 있는 기본 폰트</p>
+    
+    </body>
+</html>
