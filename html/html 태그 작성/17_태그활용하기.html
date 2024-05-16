@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>블로그 비디오 이미지</title>
+        <style>
+            body{
+                margin: 0 auto; /*자동정렬설정*/
+                text-align: center; /* 글자 가운데 정렬 */
+                background-color: rgb(187, 202, 120);
+            }
+        </style>
+    </head>
+    <!--
+        모두 가운데 정렬을 할 때는
+        body에 스타일을 전체로 가운데 적용
+        style에서 margin:0 auto; 알아서 자동으로 가운데 정렬 -가끔 작동하진 않지만 무조건 작성은 해줌
+        글자를 모두 가운데 정렬 : text-align:center
+    -->
+    <body>
+        <h2>상상의 나라 블로그</h2>
+        <p><mark>상상의 나라</mark> 블로그에 오신 것을 환영합니다.</p>
+        <video autoplay muted loop>
+            <source src="../비디오들/오로라.mp4" type="video/mp4">
+        </video>
+        <p>덥고 지친 마음 우리 블로그에서 함께해요^^</p>
+        <img src="../이미지들/pig.jpg"/>
+        <p>곧 점심시간이죠?</p>
+
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>두번째 블로그</title>
+        <style>
+            body{
+                margin: 0 auto;
+                text-align: center;
+                background-color: #cddeff;
+            }
+            .컨테이너{
+                margin: 0 auto;
+                text-align: center;
+                width: 80%;
+                padding: 20px;
+                background-color:aliceblue;
+                box-shadow: 0 0 30px rgb(171, 135, 229);
+            }
+            .비디오꾸미기{
+                width: 70%;
+                border-radius: 20px;
+                margin: 0 auto; /*상하(0) 좌우 여백을 자동으로 설정*/
+                text-align: center; /*속성 내부에서 글자를 가운데 정렬*/
+                display: block; /*가운데 전체 차지를 함으로써 정렬*/
+            }
+
+            .이미지꾸미기{
+                width: 70%;
+                text-align: center;
+                margin: 0 auto;
+                display: block;
+                border-radius: 30px; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="컨테이너">
+            <h1>두번째 블로그</h1>
+            <h2>첫번째 포스트 : 비디오 추가하기</h2>
+            <p>여름에는 저희 블로그와 함께해요.&#128513</p>
+            <video class="비디오꾸미기" autoplay muted lopp>
+                <source src="../비디오들/오로라.mp4" type="video/mp4">
+            </video>
+            <br>
+            <h2>두번째 포스트: 이미지 추가하기</h2>
+            <p>이 포스트에는 이미지가 포함되어 있습니다.&#128586</p>
+            <img class="이미지꾸미기" src="../이미지들/핑크짱구.jpg" alt="핑크짱구">
+            <br>
+            <div class="댓글들">
+                <h2>모든 댓글</h2>
+                <div class="댓글">
+                    <p>사용자1:</p>
+                    <p>이 블로그 정말 멋져요~!</p>
+                </div>
+                <div class="댓글">
+                    <p>사용자2:</p>
+                    <p>이미지가 너무 귀엽네요</p>
+                </div>
+                <div class="댓글">
+                    <input type="text" placeholder="이름을 입력하세요.">
+                    <input type="text" placeholder="내용을 입력하세요.">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
