@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>레이아웃 실습</title>
+    </head>
+    <body>
+        <h1>레이아웃 실습 예제</h1>
+            <h3>block 형식 요소를 inline 형식으로 변경</h3>
+
+            <style>
+                .블록{
+                    border: 3px dashed blue;
+                    width: 150px;
+                    height: 150px;
+                    color: black;
+                    display: block;
+                }
+                .영역1{
+                    background-color:lightcoral ;
+                }
+                .영역2{
+                    background-color: lightseagreen;
+                    color: white;
+                }
+                .inline{
+                    display: inline;
+                }
+            </style>
+            <div class="블록 영역1 inline">1번 영역</div>
+            <div class="블록 영역2 inline">2번 영역</div>
+
+            <h3>inline-block, none 확인하기</h3>
+            <style>
+                .block{
+                    border: 3px dotted blue;
+                    width: 150px;
+                    height: 150px;
+                }
+                .인라인블록{
+                    display: inline-block;
+                }
+                .영역3{
+                    background-color: lightgoldenrodyellow;
+                }
+                .영역4{
+                    background-color: lightsteelblue;
+                }
+                .영역5{
+                    background-color: lightgray;
+                }
+                .영역6{
+                    background-color: lightpink;
+                }
+                .히든{
+                    visibility: hidden;
+                }
+                .논{
+                    display: none;
+                }
+            </style>
+            <div class="block 영역1 인라인블록">1번 영역</div>
+            <div class="block 영역2 인라인블록">2번 영역</div>
+            <div class="block 영역3 인라인블록 히든">3번 영역</div>
+            <div class="block 영역4 인라인블록">4번 영역</div>
+            <div class="block 영역5 인라인블록 논 ">5번 영역</div>
+            <div class="block 영역6 인라인블록">6번 영역</div>
+
+            <hr>
+            <h3>화면 영역 분할</h3>
+            <h3>상하로 2분할 하기</h3>
+            <style>
+                .컨테이너{
+                    border:  3px solid red;
+                    width: 400px;
+                    height: 400px;
+                }
+                .컨테이너 > div{
+                    width: 50%;
+                    height: 100%;
+                    float: right; /*영역을 유연하게 배치*/
+                }
+                .컨테이너 > div:first-child{
+                    background-color: lightblue;
+                }
+                .컨테이너 > div:last-child{
+                    background-color: lightgreen;
+                }
+                #태그2 >div:first-child {
+                background-color: lightgray;
+                height: 50%;
+                 }
+                #태그2 > div:last-child{
+                    background-color: lightpink;
+                    height: 50%;
+                }
+            </style>
+        <div class="컨테이너" id="태그2">
+            <div class=""></div>
+            <div class=""></div>
+        </div>
+        <br>
+
+        <h3>상하 3분할</h3>
+        <style>
+          .컨테이너2{
+            border: 3px solid red;
+            width: 400px;
+            height: 400px;
+          }
+          .컨테이너 > div{
+            width: 100%;
+            height: 50%;
+          }
+          #태그3 > div:nth-child(1){
+            height: 25%;
+            background-color: tomato;
+          }
+          #태그3 > div:nth-child(2){
+            height: 25%;
+            background-color: khaki;
+          }
+
+          /*
+          nth-child 특정한 순서에 있는 태그를 선택할 때 사용
+          n 숫자(몇)
+          th 번째
+          child 자식
+          */
+
+          #태그3 > div:nth-child(3){
+            height: 50%;
+            background-color: aquamarine;
+          }
+        </style>
+        <div class="컨테이너2" id="태그3">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </body>
+</html>
