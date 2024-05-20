@@ -1,87 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>문의하기</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f6f6f6;
-        margin: 0;
-        padding: 0;
-      }
-      .헤더,
-      .푸터 {
-        background-color: #ff6b81;
-        padding: 20px;
+        .문의사항 h2 {
+            text-align: center;
+        }
+        .내용{
+            padding: 20px;
+        }
+        label{
+            font-weight: bold;
+        }
+        option, input, button {
+            width: 90%;
+        }
+        button:hover {
+        background-color: #0077B6;
         color: white;
-        text-align: center;
-      }
-      .네비게이션 {
-        background-color: #ff6b81;
-        margin-top: -16px; /*위 여백 간격 조정*/
-        text-align: center;
-      }
-      .네비게이션 ul {
-        list-style-type: none; /*동그라미 사라짐*/
-      }
-      .네비게이션 ul li {
-        display: inline;
-        margin-right: 20px;
-      }
-      .네비게이션 ul li a {
-        color: white;
-        font-size: 15px;
-        text-decoration: none;
-      }
-   
-      .메인 h2{
-        text-align: center;
-      }
-      button{
-        width: 90%;
-      }
-
+        }
+        .문의사항{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
+    <div class="컨테이너"></div>
     <header class="헤더">
-      <h1>문의하기</h1>
+        <h1>문의하기</h1>
     </header>
     <nav class="네비게이션">
-      <ul>
-        <li><a href="#">회사소개</a></li>
-        <li><a href="#">팀소개</a></li>
-        <li><a href="#">문의하기</a></li>
-      </ul>
+        <ul>
+            <li><a href="메인.html">홈</a></li>
+            <li><a href="제품.html">제품</a></li>
+            <li><a href="회사소개.html">회사소개</a></li>
+            <li><a href="#">문의하기</a></li>
+        </ul>
     </nav>
 
     <main>
-      <div class="메인">
-        <h2>문의 사항을 남겨주세요</h2>
-        <form>
-          <label>문의분류</label><br />
-          <select name="문의분류">
-            <option>선택해주세요</option>
-            <option>회사소개</option>
-            <option>팀소개</option>
-          </select>
-          <br />
-          <label>이름</label>
-          <input type="text" name="userName" />
-          <br />
-          <label>이메일</label>
-          <input type="email" name="email" />
-          <br />
-          <label>메세지</label>
-          <textarea name="massage" rows="5" cols="50"></textarea>
-        <br>
-          <button>보내기</button>
-        </form>
-      </div>
+        <div class="문의사항">
+            <h2>문의 사항을 남겨주세요</h2>
+            <form>
+                <div class="내용">
+                <label>문의분류<br></label>
+                <select name="문의분류">
+                    <option>선택해주세요</option>
+                    <option>제품문의</option>
+                    <option>배송문의</option>
+                    <option>환불문의</option>
+                    <option>기타문의</option>
+                </select>
+                <br>
+                <br />
+                <label>이름<br></label>
+                <input type="text" name="userName" />
+                <br>
+                <br />
+                <label>이메일<br></label>
+                <input type="email" name="email" />
+                <br>
+                <br />
+                <label>메세지<br></label>
+                <textarea name="massage" rows="7" cols="70%"></textarea>
+                <br>
+                <br>
+                <button>보내기</button>
+            </div>
+            </form>
+        </div>
     </main>
+    </div>
     <footer class="푸터">
-      <p>&copy; 2024 KH쇼핑몰. All right reserved.</p>
+        <p>&copy; 2024 KH쇼핑몰. All right reserved.</p>
     </footer>
-  </body>
+</body>
+
 </html>

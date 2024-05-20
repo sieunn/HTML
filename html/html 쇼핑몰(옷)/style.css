@@ -5,14 +5,15 @@ body{
     padding: 0;
 }
 .헤더{
-    background-color: #ff6b81;
-    padding: 20px;
+    background-color: #00B4D8;
+    padding: 10px;
     color: white;
     text-align: center;
 }
 .네비게이션{
-    background-color:#ff6b81;
-    margin-top: -16px; /*위 여백 간격 조정*/
+    background-color:#90E0EF;
+    /*margin-top: 0px; 위 여백 간격 조정*/
+    padding: 5px;
     text-align: center;
 }
 .네비게이션 ul{
@@ -27,6 +28,9 @@ body{
     font-size: 15px;
     text-decoration: none;
 }
+.네비게이션 a:hover {
+    background-color: #0077B6;
+}
 .메인{
     padding: 20px;
     display: flex;
@@ -40,9 +44,18 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 4px gray;
 }
+.블록{
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px; /*태그 아래로 공백이 필요할 때 작성*/
+    margin-right: 20px;/*태그 오른쪽으로 공백이 필요할 때 작성*/
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 4px gray;
+}
 .제품사진 img{
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: 50%;
 }
 /*마우스 버튼 위에 올리기 전 모습*/
 .제품사진 button{
@@ -56,21 +69,22 @@ body{
 }
 /*마우스를 버튼 위에 올린 후 모습*/
 .제품사진 button:hover {
-    background-color: rgb(12, 12, 243);
+    background-color: #0077B6;
     color: white;
 }
 .푸터{
-    background-color: #ff6b81;
+    background-color: #00B4D8;
     color: white;
     text-align: center;
     padding: 10px;
     width: 100%;
+    margin-top: 30px;
 }
 
 /* --------회사 소개 style---------*/
-nav a{
+.네비게이션 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 /*main*/
 main{
@@ -79,7 +93,8 @@ main{
 }
 .소개클래스{
     /*한 section이 끝날때마다 엔터(줄바꿈) 처리*/
-    display: block;
+    /*display: block;*/
+    display: flex;
     /*한 section이 끝날때마다 밑으로 간격을 20px 준 것*/
     margin-bottom: 20px;
 }
@@ -92,7 +107,9 @@ main{
     width: 200px;
     height: 200px;
 }
-
+.블록 h2{
+    text-align: center;
+}
 /*팀원 소개 섹션*/
 .팀클래스{
     /*가로 중앙 정렬을 위한 스타일 추가*/
@@ -123,6 +140,9 @@ h2 또한 자식이기 때문에 h2가 탬소개 1번째가 됨 */
 .팀클래스 .멤버:nth-child(4){
     background-color: lightblue;
 }
+.팀클래스 .멤버:nth-child(5){
+    background-color: lightgray;
+}
 
 /*:hover 어디든 맨 뒤에 붙이면 마우스가 태그안에 도착한 다음 나올 스타일
     모든 숫자에 동일한 디자인을 적용하길 원한다면 n을 작성해준다.
@@ -151,7 +171,7 @@ h2 또한 자식이기 때문에 h2가 탬소개 1번째가 됨 */
     position: fixed;
     bottom:30px;
     right: 30px;
-    background-color: yellowgreen;
+    background-color: gold;
 }
 .픽스 a{
     width: 100%;
