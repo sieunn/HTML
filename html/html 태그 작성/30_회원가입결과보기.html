@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>회원가입 결과</title>
+        <!--제이쿼리 라이브러리 추가-->
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    </head>
+    <body>
+        <h1>회원가입 완료되신 것을 환영합니다.</h1>
+        <p>이름 : <span id="resultName"></span></p>
+        <p>나이 : <span id="resultAge"></span></p>
+        <p>아이디 : <span id="resultId"></span></p>
+    </body>
+    <script>
+        $(document).ready(function(){
+
+            //url 인터넷 주소 이름 나이 아이디 같이 들어와서 사람들한테 회원가입에 대한 결과를 보여주기
+            const urlParams = new URLSearchParams(window.location.search);
+
+            const name = urlParams.get('signName');
+            $("#resultName").text(name);
+
+            const age = urlParams.get('signAge');
+            $("#resultAge").text(age);
+
+            const id = urlParams.get('signId');
+            $("#resultId").text(id);
+        });
+    </script>
+</html>
